@@ -73,7 +73,7 @@ function mainSlider() {
 mainSlider();
 
 
-// owlCarousel
+//slider-active owlCarousel
 $('.slider-active').owlCarousel({
     loop:true,
     margin:0,
@@ -91,6 +91,29 @@ $('.slider-active').owlCarousel({
         },
         992:{
             items:1
+        }
+    }
+})
+
+
+//product-active owlCarousel
+$('.product-active').owlCarousel({
+    loop:true,
+    margin:10,
+	items:1,
+	smartSpeed:600,
+	navText:['BACK','NEXT'],
+    nav:true,
+	dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        767:{
+            items:1
+        },
+        992:{
+            items:4
         }
     }
 })
