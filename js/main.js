@@ -119,6 +119,47 @@ $('.product-active').owlCarousel({
 })
 
 
+// testimonial-active
+$('.brand-active').slick({
+	dots: false,
+	infinite: true,
+	arrows: true,
+	speed: 1000,
+	autoplay:true,
+	slidesToShow: 6,
+	slidesToScroll: 1,
+    prevArrow: false,
+	nextArrow: false,
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				infinite: true,
+				dots: true
+			}
+		},
+		{
+			breakpoint: 991,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+			}
+		}
+	]
+});
+
+
+
 /* magnificPopup img view */
 $('.popup-image').magnificPopup({
 	type: 'image',
@@ -170,7 +211,7 @@ $.scrollUp({
 	animation: 'fade', // Fade, slide, none
 	animationInSpeed: 200, // Animation in speed (ms)
 	animationOutSpeed: 200, // Animation out speed (ms)
-	scrollText: '<i class="icofont icofont-long-arrow-up"></i>', // Text for element
+	scrollText: '<i class="fa-solid fa-arrow-up"></i>', // Text for element
 	activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
 });
 
